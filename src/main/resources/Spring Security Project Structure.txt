@@ -1,0 +1,46 @@
+1. New Project - Maven - archetype - webapp
+2. Web Configuration - artefact - test
+3. pom.xml
+4. БД - utf - general_ci - database.sql
+5. database.properties
+6. logback.xml
+7. validation.properties
+Слой Модели
+8. Role
+для POJO - пустой конструктор
+9. User
+transient - никуда не записываем при сериализации объекта
+Слой Dao
+будем использовать Spring JPA (кода в разы меньше и облегчает работу)
+10. RoleDao
+11. UseDao
+Слой Service
+12. UserService
+Security
+13. UserDetailsServiceImpl
+14. SecurityService
+15. SecurityServiceImpl
+Валидатор
+16. UserValidator
+Контроллер
+17. UserController
+View
+webapp - resources - css
+18. registration
+насчет FE - не bestpractice
+19. login
+20. welcome
+21.admin
+Конфигурационные файлы xml
+22. web.xml
+23. appconfig-root.xml
+24. appconfig-mvc.xml
+25. appconfig-data.xml
+26. appconfig-security.xml
+скелет
+кодировщик
+В принципе все сделали - пробуем запустить
+Добавляя пользователя ошибка - TestConfirm - на confirmpassword
+Стандартный Controller - который никаких вопросов вызвать не должен
+Перенесем папку Java в main - все ок
+http://proselyte.net/wp-content/uploads/2016/08/SpringSecurityApp.zip
